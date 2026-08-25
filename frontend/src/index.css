@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Yantramanav:wght@400;500;700&family=Public+Sans:wght@400;500;600&family=Hind:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 40 33% 98%;
+        --foreground: 222 47% 11%;
+        --card: 0 0% 100%;
+        --card-foreground: 222 47% 11%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222 47% 11%;
+        --primary: 28 100% 60%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 222 70% 14%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 30 20% 95%;
+        --muted-foreground: 215 16% 42%;
+        --accent: 28 100% 96%;
+        --accent-foreground: 222 47% 11%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 30 15% 90%;
+        --input: 30 15% 88%;
+        --ring: 28 100% 60%;
+        --radius: 0.75rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-background text-foreground font-body antialiased;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-heading;
+    }
+    ::selection {
+        background: #FF9933;
+        color: #fff;
+    }
+}
+
+@layer utilities {
+    .card-shadow {
+        box-shadow: 0 8px 30px rgb(0 0 0 / 0.06);
+    }
+    .card-shadow-lg {
+        box-shadow: 0 18px 50px rgb(11 27 61 / 0.12);
+    }
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+.lotus-watermark {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.08;
+}
+
+.hero-slide-img {
+    transition: transform 6s ease-out;
+}
+
+.embla {
+    overflow: hidden;
+}
+.embla__container {
+    display: flex;
+}
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    position: relative;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

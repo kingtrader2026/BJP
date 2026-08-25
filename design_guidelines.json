@@ -1,0 +1,150 @@
+{
+  "theme": "Light Theme (Primary) with Saffron, White, and Deep Navy Accents. Emotion: Trustworthy, Authority, Optimistic, Culturally Rooted.",
+  "typography": {
+    "heading": {
+      "english": "Outfit",
+      "hindi": "Yantramanav",
+      "weights": ["400", "600", "700", "800"],
+      "instructions": "Use tight letter-spacing for large headings. Use Google Fonts via CSS @import. Ensure line-height is tight (leading-none or leading-tight) for large headers."
+    },
+    "body": {
+      "english": "Public Sans",
+      "hindi": "Hind",
+      "weights": ["400", "500", "600"],
+      "instructions": "Maintain high legibility. Use leading-relaxed for body text."
+    },
+    "pairing_archetype": "The \"Swiss Brutalist\" (Tech / Art) modified for political authority. Clean sans-serif with varying weights for hierarchy.",
+    "hierarchy_rules": "H1 max text-5xl/6xl. Do not exceed 2 Tailwind steps between heading and subheading. Never use Inter for Headings."
+  },
+  "colors": {
+    "primary": "#FF9933",
+    "primary_hover": "#E68A2E",
+    "secondary": "#000080",
+    "background": "#F8F9FA",
+    "surface": "#FFFFFF",
+    "text_primary": "#1E293B",
+    "text_secondary": "#64748B",
+    "accents": {
+      "tricolor_green": "#138808",
+      "tricolor_white": "#FFFFFF",
+      "lotus_pink": "#E83A59"
+    },
+    "instructions": "Tinted neutral greys with a slight warm (orange) undertone. Never use pure black (#000000), use slate or deep navy instead. Contrast ratio must be strictly followed."
+  },
+  "visual_enhancers": {
+    "shadows": "Ambient + direct layered shadows. shadow-[0_8px_30px_rgb(0,0,0,0.04)] for cards.",
+    "borders": "1px crisp edges (border-slate-200/50). Nested radii: child <= parent.",
+    "gradients": "Avoid overly bright gradients. Use very subtle, sophisticated linear gradients (e.g., bg-gradient-to-br from-white to-slate-50).",
+    "textures": "Subtle paper or noise texture to avoid digital flatness on Saffron backgrounds.",
+    "motifs": "Elegant Lotus motif (SVG) used as a watermark or subtle background decoration in premium sections (Donation, Leader Profiles)."
+  },
+  "component_rules": {
+    "header": "Sticky navigation, bilingual toggle (EN/HI). Glassmorphism effect: backdrop-blur-xl bg-white/80 border-b border-slate-200. Mobile-first hamburger menu. Subtle saffron accent line at bottom.",
+    "hero_carousel": "Full-width, auto-slide, swipeable. Text overlay max opacity bg-black/40. Indicators and Prev/Next buttons with premium hover states.",
+    "buttons": "Pill-shaped (rounded-full) or subtle rounded-md for primary actions. Saffron background with white text for CTA. Always include interactive hover/focus states.",
+    "cards": "Premium cards for Leadership and News. Soft shadows, subtle borders, elegant translateY(-4px) on hover.",
+    "donation_section": "Premium Saffron background (#FF9933) with dark text or White text depending on contrast. Elegant lotus motif watermark. ₹10,001 minimum validation logic.",
+    "footer": "Deep Navy Blue background with white text. Tricolor strip (Saffron, White, Green) at the absolute bottom edge."
+  },
+  "grids": {
+    "leadership": "Bento-style or balanced grid. 1 column on mobile, 3-4 columns on desktop. gap-6 or gap-8.",
+    "news_events": "Asymmetrical or mixed grid to create visual interest. E.g., one featured news item (col-span-2) and smaller cards (col-span-1)."
+  },
+  "layouts": {
+    "mobile_first": "Ensure no horizontal scroll, touch-friendly tap targets (min 44px), swipeable carousels.",
+    "spacing": "Generous spacing. py-16 to py-24 for main sections. p-6 or p-8 for inner card padding.",
+    "alternating_layout": "About section uses alternating image/text blocks (Image Left/Text Right, then Text Left/Image Right) on desktop."
+  },
+  "motion": {
+    "interactions": "Hover states (transform, shadow, color shift). Click/press scale (scale-95).",
+    "transitions": "Specific transitions like 'transition-transform duration-300', avoid 'transition-all'.",
+    "entrances": "Staggered fade-up entrances for lists/cards using framer-motion."
+  },
+  "accessibility": {
+    "contrast": "Ensure text over Saffron meets 4.5:1 (use deep navy or dark slate text on saffron if white fails, or darken saffron slightly).",
+    "focus": "focus:ring-2 focus:ring-saffron focus:outline-none.",
+    "data_testid": "All interactive elements MUST have data-testid attributes (e.g., data-testid='donate-button').",
+    "reduced_motion": "Respect prefers-reduced-motion media query."
+  },
+  "media": {
+    "images": "Images capped at 80vh height on mobile. Use object-cover for hero banners.",
+    "icons": "Use lucide-react for UI icons. Do not use emoji icons.",
+    "galleries": "Media gallery with tabs (Live, Videos, Photos) and full-screen viewer."
+  },
+  "3d_libraries": {
+    "map": "Use 'react-simple-maps' for the 'Our Footprints' interactive India map. Allow state selection, hover effects (Saffron hover), and side panel statistics."
+  },
+  "image_urls": {
+    "hero_banners": [
+      {
+        "url": "https://images.pexels.com/photos/16136353/pexels-photo-16136353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Crowd holding a banner, suitable for rally/political hero banner (use with dark overlay)."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1760872646642-5c4cde741cfe?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxuZXclMjBkZWxoaSUyMHBhcmxpYW1lbnQlMjBidWlsZGluZyUyMHN1bnNldHxlbnwwfHx8fDE3ODc3MDA3MTF8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Parliament building for official, patriotic hero banner."
+      },
+      {
+        "url": "https://images.pexels.com/photos/39013505/pexels-photo-39013505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Indian flag waving in sky."
+      }
+    ],
+    "leadership_portraits": [
+      {
+        "url": "https://images.unsplash.com/photo-1584554376766-ac0f2c65e949?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBpbmRpYW4lMjBtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODc3MDA2OTl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Professional Indian male portrait."
+      },
+      {
+        "url": "https://images.pexels.com/photos/38889922/pexels-photo-38889922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Confident businessman/leader in suit."
+      },
+      {
+        "url": "https://images.pexels.com/photos/12310724/pexels-photo-12310724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Smiling man outdoors."
+      }
+    ],
+    "motifs_and_backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1594882471743-2758d2ce5f00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxsb3R1cyUyMGZsb3dlciUyMG1hY3JvJTIwbWluaW1hbHxlbnwwfHx8fDE3ODc3MDA2OTl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Pink lotus flower macro, can be used as a soft background or feature image."
+      },
+      {
+        "url": "https://images.pexels.com/photos/27118600/pexels-photo-27118600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Delicate white lotus flower."
+      }
+    ],
+    "news_events": [
+      {
+        "url": "https://images.unsplash.com/photo-1713001075225-8c490e800e29?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBwb2xpdGljYWwlMjByYWxseSUyMGNyb3dkfGVufDB8fHx8MTc4NzcwMDY5OXww&ixlib=rb-4.1.0&q=85",
+        "description": "Large gathering, good for event thumbnails."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build out the app using React + Tailwind + Shadcn UI.",
+    "Include both a public marketing site (Home, About, News, Events, Donate) and an admin dashboard.",
+    "Do NOT use HTML <input type='date'> or <select>, use Shadcn UI components.",
+    "Implement language toggling logic (Hindi/English) visually and contextually across the site.",
+    "Ensure 'Our Footprints' map is interactive. You can use an SVG map of India or react-simple-maps.",
+    "Donation form MUST have a ₹10,001 minimum validation logic.",
+    "Keep the codebase clean, modular, and use direct children for grids.",
+    "Use 'Outfit' for English headings, 'Yantramanav' for Hindi headings. Apply via CSS.",
+    "Ensure 'data-testid' on all interactive elements (buttons, inputs, links)."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do not converge toward generic, 'on distribution' outputs. Make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (e.g., transition: all). Add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, i.e. do not add .App { text-align: center; } in the css file.",
+    "Always use modern button styles like pill-shaped or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, entrance animations. Static = dead.",
+    "Use generous spacing. Cramped designs look cheap.",
+    "Use sonner for toast notifications.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "The main agent relies on provided image URLs. NEVER use placeholder text or services like via.placeholder.com."
+  ]
+}
