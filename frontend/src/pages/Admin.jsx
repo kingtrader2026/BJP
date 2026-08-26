@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Trash2, Pencil, Plus, LogOut, RefreshCw } from "lucide-react";
 import { toast } from "sonner";
 import api, { formatApiError } from "../api";
-import { LotusIcon } from "../components/Lotus";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/tabs";
 import { Dialog, DialogContent, DialogTitle } from "../components/ui/dialog";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "../components/ui/select";
@@ -109,9 +108,7 @@ export default function Admin() {
       <div className="min-h-screen bg-navy flex items-center justify-center px-4" data-testid="admin-login-page">
         <form onSubmit={login} className="w-full max-w-sm bg-white rounded-3xl card-shadow-lg p-8" data-testid="admin-login-form">
           <div className="flex items-center gap-3 mb-6">
-            <span className="w-11 h-11 rounded-full bg-saffron flex items-center justify-center">
-              <LotusIcon className="w-6 h-6" color="#fff" />
-            </span>
+            <img src="/assets/logo.jpg" alt="BJP Lotus Logo" className="w-11 h-11 rounded-full object-cover" />
             <div>
               <h1 className="font-heading font-bold text-navy">Admin Panel</h1>
               <p className="text-xs text-slate-500">भारतीय जनता पार्टी</p>
@@ -138,7 +135,7 @@ export default function Admin() {
       <div className="bg-navy text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="w-9 h-9 rounded-full bg-saffron flex items-center justify-center"><LotusIcon className="w-5 h-5" color="#fff" /></span>
+            <img src="/assets/logo.jpg" alt="BJP Lotus Logo" className="w-9 h-9 rounded-full object-cover" />
             <h1 className="font-heading font-bold">BJP Admin</h1>
           </div>
           <div className="flex items-center gap-2">

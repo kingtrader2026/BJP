@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useLang } from "../i18n";
-import { LotusIcon } from "./Lotus";
 import { Facebook, Twitter, Youtube, Instagram, MapPin, Phone, Mail } from "lucide-react";
 import { toast } from "sonner";
 import api from "../api";
@@ -40,9 +39,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <span className="w-12 h-12 rounded-full bg-saffron flex items-center justify-center">
-              <LotusIcon className="w-7 h-7" color="#fff" />
-            </span>
+            <img src="/assets/logo.jpg" alt="BJP Lotus Logo" className="w-12 h-12 rounded-full object-cover" />
             <div>
               <p className="font-heading font-bold text-lg leading-tight">{t("brand")}</p>
               <p className="text-xs text-white/60">{t("brand_sub")}</p>

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useLang } from "../i18n";
-import { LotusIcon } from "./Lotus";
 import { Search, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "./ui/sheet";
 import api from "../api";
@@ -44,9 +43,7 @@ export const Header = () => {
       <div className="bg-white/85 backdrop-blur-xl border-b border-slate-200/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center gap-3 h-16 md:h-20">
           <a href="#home" data-testid="header-logo" className="flex items-center gap-3 shrink-0" onClick={(e) => { e.preventDefault(); scrollTo("home"); }}>
-            <span className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-saffron flex items-center justify-center ring-2 ring-saffron/30">
-              <LotusIcon className="w-6 h-6 md:w-7 md:h-7" color="#fff" />
-            </span>
+            <img src="/assets/logo.jpg" alt="BJP Lotus Logo" className="w-10 h-10 md:w-12 md:h-12 rounded-full ring-2 ring-saffron/30 object-cover" />
             <span className="leading-tight">
               <span className="block font-heading font-800 font-bold text-navy text-base md:text-lg tracking-tight">{t("brand")}</span>
               <span className="block text-[11px] md:text-xs text-slate-500">{t("brand_sub")}</span>
@@ -85,9 +82,7 @@ export const Header = () => {
               <SheetContent side="right" className="w-80 bg-white">
                 <SheetTitle className="sr-only">{t("brand")}</SheetTitle>
                 <div className="flex items-center gap-3 mb-6 mt-2">
-                  <span className="w-10 h-10 rounded-full bg-saffron flex items-center justify-center">
-                    <LotusIcon className="w-6 h-6" color="#fff" />
-                  </span>
+                  <img src="/assets/logo.jpg" alt="BJP Lotus Logo" className="w-10 h-10 rounded-full object-cover" />
                   <div>
                     <p className="font-heading font-bold text-navy">{t("brand")}</p>
                     <p className="text-xs text-slate-500">{t("brand_sub")}</p>

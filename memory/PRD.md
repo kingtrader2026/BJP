@@ -18,6 +18,10 @@ Premium, modern, mobile-first political organization website for Bharatiya Janta
 Min donation ₹10,001 (client + server validated) • bilingual hi/en • lotus motif • tricolor accents • responsive 4/2/1 leader grid • admin-managed leaders (hide unavailable) • special-leader donation section • interactive India map + searchable states • news load-more • media tabs (Live/Videos/Photos) with viewer • footer tricolor strip • no ID document upload
 
 ## Implemented (2026-08-25)
+- Official BJP lotus logo (user-provided) across header, mobile menu, footer, admin panel
+- Real leadership added: PM Narendra Modi, National President Nitin Nabin (both featured in special leader-donation section), Atal Bihari Vajpayee (Former PM, Bharat Ratna); fictional placeholder president demoted to National Vice President
+- "Our Foundation / हमारी नींव" section with user-provided Mookherjee & Deendayal Upadhyaya banner + founder cards
+- "Leadership You Can Trust / विश्वसनीय नेतृत्व" navy grid section — 31 leader portraits cropped from user-provided reference image
 - Sticky glass header: lotus logo, bilingual nav, search panel (sections + leaders), EN/हिंदी toggle, Donate CTA, hamburger sheet, saffron accent line
 - Hero carousel: 3 slides, auto-slide 5s, swipe, prev/next, indicators, bilingual headlines
 - Leaders grid (6 seeded, admin CRUD, profile dialog)
